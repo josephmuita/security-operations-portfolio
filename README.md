@@ -1,2 +1,2 @@
-# security-operations-portfolio
-Hands-on SOC Analyst, IT Support &amp; Security Analyst portfolio
+# soc-it-data-analyst-portfolio
+Hands-on IT Support, Cybersecurity, and Data Analyst labs demonstrating practical, entry-level skills.
