@@ -28,7 +28,7 @@ This lab demonstrates:
 ---
 
 ## Observations
-- Number of failed logins: [Insert number]  
+- Number of failed logins: [5]  
 - Username(s) involved: [Insert username]  
 - Notable patterns: [Insert patterns, e.g., multiple failures from same user]  
 - Account lockouts observed: [Yes/No]  
