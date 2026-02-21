@@ -1,4 +1,4 @@
-# 👋 Joseph Muita – IT | Cybersecurity | Data Analyst Portfolio
+# 👋 Joseph Muita Wambui – IT | Cybersecurity | Data Analyst Portfolio
 
 ## 🎯 Professional Summary
 Entry-level IT and Security Analyst with hands-on lab experience in system troubleshooting, log analysis, network traffic inspection, SQL-based investigations, and Python automation.  
