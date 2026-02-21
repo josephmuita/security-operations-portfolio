@@ -79,6 +79,21 @@ In this capture, only normal browsing domains were observed.
 Repeated DNS queries at fixed time intervals may indicate automated communication such as beaconing behavior, which should be reviewed for potential security risks
 
 ---
+## Baseline Traffic Observation
+
+Network traffic was first observed under normal browsing conditions to establish baseline behavior.
+
+Baseline behavior included:
+- Regular DNS resolution requests
+- Standard web domain communication
+- No high-frequency automated packet transmission
+
+## Security Consideration
+
+Network traffic monitoring is important because attackers may use DNS communication 
+or network protocols to establish command-and-control channels.
+
+This lab demonstrates awareness of network visibility and basic threat detection concepts.
 
 ## Screenshots
 - `screenshots/dns_overview.png`
