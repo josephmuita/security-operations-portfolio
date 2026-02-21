@@ -91,6 +91,7 @@ Wireshark
 
 ________________________________________
 🌍 PART 1 — How DNS Actually Works (Step by Step)
+
 DNS = Domain Name System
 Its job:
 Translate domain names into IP addresses.
@@ -98,15 +99,18 @@ Because computers don’t understand:
 google.com
 They understand:
 142.250.x.x
+
 ________________________________________
 🔄 What Happens When You Type a Website
 Let’s say you type:
 github.com
 Here’s what happens behind the scenes:
+
 1️⃣ Your Computer Checks Cache
 •	“Do I already know the IP?”
 •	If yes → skip DNS.
 •	If no → continue.
+
 ________________________________________
 2️⃣ Your Computer Sends a DNS Query
 Your PC sends a packet to a DNS server:
@@ -118,6 +122,7 @@ It contains:
 •	Query type (A record = IPv4)
 •	Domain name requested
 ________________________________________
+
 3️⃣ DNS Server Responds
 The DNS server replies:
 “github.com = 140.82.113.3”
@@ -127,6 +132,7 @@ It contains:
 •	TTL (how long to cache it)
 •	Record type
 ________________________________________
+
 4️⃣ Your Computer Connects to That IP
 Now your browser:
 •	Opens a TCP connection
@@ -134,7 +140,9 @@ Now your browser:
 •	Loads website
 DNS is just the first step.
 ________________________________________
+
 📦 PART 2 — What a DNS Packet Contains
+
 When you expand a DNS packet in Wireshark, you’ll see:
 In a Query:
 •	Transaction ID
@@ -154,7 +162,9 @@ In a Response:
 Example:
 Standard query response A github.com A 140.82.113.3
 ________________________________________
+
 🦈 PART 3 — What Wireshark Does
+
 Wireshark is a packet analyzer.
 It:
 •	Captures packets
@@ -173,7 +183,9 @@ Destination	Who received it
 Protocol	DNS, TCP, HTTP, etc.
 Info	What happened
 ________________________________________
+
 🔍 PART 4 — Filtering DNS
+
 In the filter bar, you type:
 dns
 Now Wireshark shows only DNS packets.
@@ -181,7 +193,9 @@ You’ll see:
 •	Queries (request)
 •	Responses (answer)
 ________________________________________
+
 🧠 PART 5 — Why DNS Matters in Cybersecurity
+
 DNS is monitored because:
 •	Malware uses DNS
 •	Command & control uses DNS
@@ -190,7 +204,9 @@ DNS is monitored because:
 DNS traffic is almost always allowed through firewalls.
 That makes it attractive to attackers.
 ________________________________________
+
 🚨 PART 6 — What Suspicious DNS Looks Like
+
 🚩 1. Random Domains
 asdkfj2398.xyz
 🚩 2. Many Requests Per Minute
@@ -202,7 +218,9 @@ Possible DNS tunneling.
 Every 60 seconds exactly → automated behavior.
 Humans don’t browse like that.
 ________________________________________
+
 📊 PART 7 — What Your Lab Proves
+
 When you upload your Wireshark lab, you are proving:
 ✅ You understand DNS basics
 ✅ You know query vs response
@@ -211,7 +229,9 @@ When you upload your Wireshark lab, you are proving:
 ✅ You understand security implications
 That’s solid entry-level SOC knowledge.
 ________________________________________
+
 🎤 PART 8 — What You Should Be Able to Explain in Interviews
+
 You should confidently explain:
 1.	What DNS does
 2.	What a DNS query is
@@ -221,7 +241,9 @@ You should confidently explain:
 6.	How you captured traffic using Wireshark
 If you can explain those clearly, you’re ahead of most beginners.
 ________________________________________
+
 🧩 PART 9 — Important Extra Knowledge
+
 DNS Record Types:
 •	A → IPv4
 •	AAAA → IPv6
@@ -230,7 +252,9 @@ DNS Record Types:
 •	TXT → Text records (sometimes abused)
 Most browsing uses A and AAAA.
 ________________________________________
+
 🔥 Final Big Picture
+
 DNS is:
 The phonebook of the internet.
 Wireshark lets you:
