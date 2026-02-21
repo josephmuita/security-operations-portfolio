@@ -86,13 +86,9 @@ Repeated DNS queries at fixed time intervals may indicate automated communicatio
 - `screenshots/dns_response.png`
 - 
 NOTES;
+
 Wireshark 
-Perfect. 🔥
-Let’s build your complete DNS + Wireshark foundation in one clean guide.
-No fluff. Everything you need to understand for:
-•	Portfolio
-•	Interviews
-•	SOC entry roles
+
 ________________________________________
 🌍 PART 1 — How DNS Actually Works (Step by Step)
 DNS = Domain Name System
