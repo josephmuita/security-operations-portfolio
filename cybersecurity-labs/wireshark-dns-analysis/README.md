@@ -8,6 +8,35 @@ This lab demonstrates:
 - Inspecting source and destination IPs
 - Identifying queries and responses
 - Understanding basic network traffic analysis for SOC investigations
+  
+- ## Understanding DNS Traffic
+
+DNS (Domain Name System) translates domain names into IP addresses.
+
+For example:
+google.com → 142.250.x.x
+
+When visiting a website, the following happens:
+
+1. My computer sends a **DNS query** asking:
+   "What is the IP address of this domain?"
+
+2. The DNS server sends a **DNS response** containing the IP address.
+
+In Wireshark:
+- A **DNS query** is an outgoing request from my device.
+- A **DNS response** is an incoming reply from the DNS server.
+
+Monitoring DNS traffic helps identify:
+- Normal browsing behavior
+- Suspicious domains
+- Potential malware communication
+- Unusual high-frequency requests
+
+This lab demonstrates how to capture and analyze DNS query and response packets using Wireshark.
+
+
+  
 
 ---
 
@@ -37,6 +66,16 @@ This lab demonstrates:
 - Source IPs: [Insert IPs]
 - Destination IPs: [Insert DNS server IPs]
 - Patterns: normal web browsing queries; no suspicious domains detected
+
+  ## Security Insight
+
+Abnormal DNS activity may indicate:
+- Malware beaconing
+- Communication with command-and-control servers
+- DNS tunneling attempts
+- Data exfiltration
+
+In this capture, only normal browsing domains were observed.
 
 ---
 
