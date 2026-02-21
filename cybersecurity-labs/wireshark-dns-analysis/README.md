@@ -76,6 +76,7 @@ Abnormal DNS activity may indicate:
 - Data exfiltration
 
 In this capture, only normal browsing domains were observed.
+Repeated DNS queries at fixed time intervals may indicate automated communication such as beaconing behavior, which should be reviewed for potential security risks
 
 ---
 
