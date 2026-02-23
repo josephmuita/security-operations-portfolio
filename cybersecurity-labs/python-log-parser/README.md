@@ -24,3 +24,9 @@ Repeated failed login attempts against a single account may indicate:
 - Brute-force attack attempts
 - Credential guessing
 - Unauthorized access attempts
+## Screenshots
+
+- Code implementation
+- Log parser execution output
+
+Screenshots are stored inside the `/screenshots` directory.
